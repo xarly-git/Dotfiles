@@ -14,6 +14,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+alias barra='f(){ killall -q polybar; polybar -c ~/.polybar/.statusbar "$@" & disown;  unset -f f; }; f'
+alias kbarra='killall -q polybar'
+
 
 
 # Syntax highlighting
