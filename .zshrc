@@ -16,6 +16,7 @@ compinit
 
 alias barra='f(){ killall -q polybar; polybar -c ~/.polybar/.statusbar "$@" & disown;  unset -f f; }; f'
 alias kbarra='killall -q polybar'
+alias sync-dotfiles='bash /home/xarly/Documentos/GITs/Dotfiles/sincronizar-dotfiles'
 
 
 

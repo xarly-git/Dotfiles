@@ -90,7 +90,7 @@ super + Return
 super + t
 	thunar
 #firefox
-super + m
+super + n
 	firefox
 
     
