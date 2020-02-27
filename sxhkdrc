@@ -6,9 +6,12 @@
 super + shift + e
     pkill -USR1 -x sxhkd
 
+
 # Reiniciar BSPWM
 super + shift + r
-    bspc {quit,wm -r}
+	bspc {quit,wm -r}
+
+
 
 
 
@@ -21,9 +24,13 @@ super + shift + r
 # |      BSPWM HOTKEYS (SUPER + ?)     |
 # +------------------------------------+
 
+# fullscreen
+super + f
+	bspc node -t \~fullscreen
+
 # Cerrar ventana
 super + q
-    bspc node -c
+	bspc node -c
 
 # Cambiar la posición de la ventana seleccionada por la de la ventana más grande en es escritorio
 super + g

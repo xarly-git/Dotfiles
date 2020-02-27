@@ -33,7 +33,7 @@
 monitor = ${env:MONITOR:DVI-D-1}
 modules-right = volume date
 modules-left = workspaces
-modules-center = spotify
+modules-center = 
 padding = 2
 font-0 = "cherry:pixelsize=12;2"
 font-1 = "Siji:size=20;2"
@@ -45,11 +45,11 @@ bottom = false
 monitor = ${env:MONITOR:DVI-D-1}
 modules-right = nvidia-smi-utilization nvidia-smi-temperature memory cpu temperature volume date
 modules-left = workspaces
-modules-center = spotify
+modules-center = 
 padding = 2
 font-0 = "cherry:pixelsize=12;2"
 font-1 = "Siji:size=20;2"
-background = #202C33
+background = #000000
 bottom = false
 
 

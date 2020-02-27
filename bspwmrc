@@ -3,11 +3,17 @@
 #AUTOSTART
 
 sxhkd &
+
+#killall -q polybar &
+
 setxkbmap -layout es &
+
 feh --bg-scale /home/xarly/Images/HyperBeast.jpg &
-killall -q polybar &
-polybar -c ~/.polybar/.statusbar "sensores" &
+
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+polybar -c ~/.polybar/.statusbar "sensores" &
+
 
 #MONITORS
 
@@ -50,6 +56,8 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_DVI-D-1)
 
 
 
