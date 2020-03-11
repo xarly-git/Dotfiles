@@ -7,7 +7,7 @@ bindkey -e
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '~/.zshrc'
-PROMPT=' ➜%b%f '
+PROMPT=' %B%F{#ff0000}➜ %b%f '
 
 
 autoload -Uz compinit

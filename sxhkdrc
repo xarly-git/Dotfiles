@@ -9,7 +9,7 @@ super + shift + e
 
 # Reiniciar BSPWM
 super + shift + r
-	bspc {quit,wm -r}
+	bspc wm -r
 
 
 
