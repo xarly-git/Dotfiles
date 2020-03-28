@@ -123,7 +123,7 @@ super + Return
 
 # dmenu
 super + d
-    dmenu_run
+    j4-dmenu-desktop
 
 #file manager
 super + t
