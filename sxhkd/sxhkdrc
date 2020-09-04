@@ -13,7 +13,17 @@ super + shift + r
 
 
 
+# hacer floating window
+super + shift + f
+	bspc node -t floating
+	
+# hacer tiling
+super + shift + t
+	bspc node -t tiled
 
+# tiggle tiling/floating
+super + shift +s
+	`bspc node -t \~ floating`
 
 
 
@@ -39,6 +49,15 @@ super + g
 # Apagar pc
 super + shift + p
 	shutdown -h now
+	
+
+#mas brillo
+ctrl + F4
+	xbacklight -inc 10
+	
+#menos brillo
+ctrl + F3
+	xbacklight -dec 10
 
 
 
@@ -103,6 +122,28 @@ super + ctrl + {Left,Down,Up,Right}
 # Cancelar la preselección
 super + ctrl + space
     bspc node -p cancel
+   
+    
+    
+    
+# +------------------------+
+# |      APLICACIONES      |
+# +------------------------+
+
+#mute/unmute
+ctrl + F10
+	amixer sset 'Master' toggle
+
+
+# Subir Volumen
+ctrl + F12
+	amixer sset 'Master' 5%+
+	
+# Bajar volumen
+ctrl + F11
+	amixer sset 'Master' 5%-
+
+  
 
 
 
@@ -127,7 +168,7 @@ super + d
 
 #file manager
 super + t
-	thunar
+	io.elementary.files
 #firefox
 super + m	
 	firefox
