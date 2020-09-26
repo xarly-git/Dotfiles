@@ -269,3 +269,5 @@ bind "kp_pgdn" "buy deagle"
 host_writeconfig //Store current settings to config.cfg
  
 echo Scripts Loaded (2/2)
+
+XAKAC65VAPMFXBKA
