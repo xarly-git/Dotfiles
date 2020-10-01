@@ -40,6 +40,8 @@ bind "f4" "ignoremsg" //Ignore chat by turning off enemies, teams and both
  
 
 bind "mwheeldown" "+jump" //For them bhops
+
+bind k "use weapon_knife; use weapon_c4; drop; slot1" //drop c4
  
 bind "home" "cl_draw_only_deathnotices 0" //Show all of hud
 bind "end" "cl_draw_only_deathnotices 1" //Hide parts of hud (for recording videos)
@@ -64,15 +66,39 @@ bind mwheelup slot2 // take pistol
 
 // 3. Crosshair
 
+cl_crosshair_drawoutline "1"
+cl_crosshair_dynamic_maxdist_splitratio "0.35"
+cl_crosshair_dynamic_splitalpha_innermod "1"
+cl_crosshair_dynamic_splitalpha_outermod "0.5"
+cl_crosshair_dynamic_splitdist "7"
+cl_crosshair_friendly_warning "1"
+cl_crosshair_outlinethickness "1"
+cl_crosshair_sniper_show_normal_inaccuracy "0"
+cl_crosshair_sniper_width "1"
+cl_crosshair_t "0"
+cl_crosshairalpha "205"
+cl_crosshaircolor "5"
+cl_crosshaircolor_b "127"
+cl_crosshaircolor_g "255"
+cl_crosshaircolor_r "0"
+cl_crosshairdot "0"
+cl_crosshairgap "2"
+cl_crosshairgap_useweaponvalue "0"
+cl_crosshairsize "2.5"
+cl_crosshairstyle "4"
+cl_crosshairthickness "0"
+cl_crosshairusealpha "1"
+cl_fixedcrosshairgap "3"
+
 
  
 // 4. Hud
 hud_scaling "0.75" //Scales hud elements to maximum value
 hud_showtargetid "1" //Enables display of target names, important
 cl_hud_bomb_under_radar "1" //Draws bomb under radar, convenient
-cl_hud_color "5" //Hud color
-cl_hud_playercount_showcount "0" //Shows player avatars instead of numbers left
-cl_hud_playercount_pos "1" //Puts player information in the bottom instead of top
+cl_hud_color "9" //Hud color
+cl_hud_playercount_showcount "1" //Shows player count instead of avatars
+cl_hud_playercount_pos "0" //Puts player information in the top
 cl_hud_healthammo_style "0" //Reverted hud style due to hidden burst mode
 cl_hud_background_alpha "0.4" //Hidden but still visible black bars, easy on the eyes
 cl_showloadout "1" //So it doesnt fade out the weapon slots, very annoying otherwise
@@ -269,5 +295,3 @@ bind "kp_pgdn" "buy deagle"
 host_writeconfig //Store current settings to config.cfg
  
 echo Scripts Loaded (2/2)
-
-XAKAC65VAPMFXBKA
